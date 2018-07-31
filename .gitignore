@@ -5,6 +5,7 @@ _*
 php-old
 extensions
 build
+files
 files2
 elFinderVolumeSVN.class.php
 connector-svn.php
