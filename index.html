@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>data.information.dk</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+  <head>
+    <meta charset="utf-8">
+    <title>data.information.dk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
 
-		<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
-		<link rel="stylesheet" type="text/css" href="css/elfinder.min.css">
-		<link rel="stylesheet" type="text/css" href="css/theme.css">
-		<link rel="stylesheet" type="text/css" href="css/information.css">
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/elfinder.min.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/information.css">
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-		<script src="js/elfinder.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/elfinder.min.js"></script>
 
-		<script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
       var elfinderInstance;
 
-			$(document).ready(function() {
-				elfinderInstance = $('#elfinder').elfinder({
-					url : 'php/connector.minimal.php',
+      $(document).ready(function() {
+        elfinderInstance = $('#elfinder').elfinder({
+          url : 'php/connector.minimal.php',
           commandsOptions : {
             info: {
               hideItems : ['path']
             }
           }
-				}).elfinder('instance');
+        }).elfinder('instance');
         
         var h = parseInt($(window).height());
         elfinderInstance.resize('100%', h)
-			});
+      });
       
       // Fit to window.height on window.resize.
       var resizeTimer = null;
@@ -42,9 +42,9 @@
           }
         }, 200);
       });
-		</script>
-	</head>
-	<body>
-		<div id="elfinder"></div>
-	</body>
+    </script>
+  </head>
+  <body>
+    <div id="elfinder"></div>
+  </body>
 </html>
