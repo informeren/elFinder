@@ -19,7 +19,12 @@
 
 			$(document).ready(function() {
 				elfinderInstance = $('#elfinder').elfinder({
-					url : 'php/connector.minimal.php'
+					url : 'php/connector.minimal.php',
+          commandsOptions : {
+            info: {
+              hideItems : ['path']
+            }
+          }
 				}).elfinder('instance');
         
         var h = parseInt($(window).height());
