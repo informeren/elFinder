@@ -11,3 +11,6 @@ elFinderVolumeSVN.class.php
 connector-svn.php
 node_modules
 connector.php
+
+php/connector.minimal.*
+!php/connector.minimal.php-dist
